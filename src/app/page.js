@@ -2,12 +2,30 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { useState } from "react";
+import monk from '../assets/img/monk.png'
+import knight from '../assets/img/knight.png'
+import archer from '../assets/img/archer.png'
 
 export default function Home() {
+  const images = {
+    monk: {
+      src: monk,
+      alt: "monk"
+    },
+    knight: {
+      src: knight,
+      alt: "knight"
+    },
+    archer: {
+      src: archer,
+      alt: "archer"
+    }
+  }
  const icons = ["archer", "knight", "monk"];
  const [icon, setIcon] = useState("archer");
  const [prevIcon, setPrevIcon] = useState("monk");
  const [nextIcon, setNextIcon] = useState("knight");
+
  function changeIcon(direction) {
   const currentIndex = icons.indexOf(icon);
   let nextIndex
@@ -50,9 +68,9 @@ export default function Home() {
     <div className={styles.page}>
       <div className={styles.arrow} onClick={() => changeIcon("left")}>Change Me Left</div>
       <div className={styles.icons}>
-      <h1 className={styles.iconL}>{prevIcon}</h1>
-        <h1 className={styles.iconC}>{icon}</h1>
-        <h1 className={styles.iconR}>{nextIcon}</h1>
+      <Image width={100} height={300} className={styles.iconL} src={images[prevIcon].src} alt={images[prevIcon].alt}></Image>
+      <Image width={100} height={300} className={styles.iconC} src={images[icon].src} alt={images[icon].alt}></Image>
+      <Image width={100} height={300} className={styles.iconR} src={images[nextIcon].src} alt={images[nextIcon].alt}></Image>
        
       </div>
       <div className={styles.arrow} onClick={() => changeIcon("right")}>Change Me Right</div>

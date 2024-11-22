@@ -22,7 +22,6 @@
   height:300px;
   width:100px;
   transition: all 0.2s;
-  background-color: red;
 }
 .iconL, .iconR {
   opacity: 50%;
