@@ -2,7 +2,7 @@
 >
 > ## Contributors: Ev S. and Jacob G.
 >
-> ## Topic: Life + Weaponry of Medieval Times
+> ## Topic: Life + Weaponry of Medieval Times (Historical Period)
 >
 > ### List of Pages:
 >
