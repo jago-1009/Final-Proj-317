@@ -42,7 +42,7 @@
 >
 > Priest Page:
 >
-> - Shows information on medieval priets, including beliefs, clothes, accessories, etc.
+> - Shows information on medieval priests, including beliefs, clothes, accessories, etc.
 > - Responsible: Ev
 
 ### Sources:
