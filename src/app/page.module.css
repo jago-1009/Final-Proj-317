@@ -1,15 +1,53 @@
 .page {
 
 
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
+  display: flex;
+
   align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
+  justify-content: center;
+
+
  
 }
+.container {
+  height:100%;
+  width: 60%;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.container p {
+  font-size:24px;
+}
+.title {
+  margin-top:20px;
+  font-size: 30px;
+}
+.button {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+  color:white;
+  font-size: 24px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid black;
 
+}
+.button:hover {
+  background-color: transparent;
+  color:black;
+}
+.container h1 {
+  margin-top:50px;
+  font-size: 75px;
+}
 .icons {
   display: flex;
   width:60%;
@@ -27,8 +65,21 @@
   opacity: 50%;
   scale: 0.7;
 }
-.arrow {
+
+.right {
   cursor: pointer;
+  height:100px;
+  width:100px;
+  background-color: black;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 32% 100%, 62% 51%, 32% 0);
+}
+.left {
+  cursor: pointer;
+  height:100px;
+  width:100px;
+  background-color: black;
+  clip-path: polygon(62% 0, 32% 51%, 62% 100%, 25% 100%, 0% 50%, 25% 0%);
+
 }
 .main {
   display: flex;

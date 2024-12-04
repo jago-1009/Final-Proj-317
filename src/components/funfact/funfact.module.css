@@ -1,0 +1,25 @@
+.container * {
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width:50%;
+    text-align:center;
+}
+.container h3 {
+    font-size: 30px;
+}

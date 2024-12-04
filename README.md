@@ -33,12 +33,6 @@
 > - Responsible: Ev
 >
 > Swordsman Page:
->
-> - Shows information on medieval archers, including bows, arrow types, etc.
-> - Responsible: Jacob
->
-> Armor Page:
->
 > - Shows information on medieval fighters, including swords, clothing, etc.
 > - Responsible: Jacob
 >
