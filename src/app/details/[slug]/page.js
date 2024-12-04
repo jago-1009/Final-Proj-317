@@ -16,7 +16,7 @@ function DetailCard({name}) {
             return <div className={detailStyles.container}><h1>{name}</h1><p>{data[item].desc}</p></div>
         }
         else {
-            return <div className={detailStyles.container}><h1>Error</h1><p>We're sorry, but your parameter ({name}) is not valid. Please try again with an existing parameter</p></div>
+            return <div className={detailStyles.container}><h1>Error</h1><p>We&apos;re sorry, but your parameter ({name}) is not valid. Please try again with an existing parameter</p></div>
         }
 }
 }
