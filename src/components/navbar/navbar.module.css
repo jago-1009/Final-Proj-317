@@ -1,0 +1,18 @@
+.container {
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.container div {
+    margin:10px;
+}
+.navLinks * {
+    margin-right:10px;
+    font-size: 30px;
+}
+.navLinks *::after {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    content: " | ";
+}
