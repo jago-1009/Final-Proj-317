@@ -84,7 +84,7 @@ export default function Home() {
       <div className={styles.right} onClick={() => changeIcon("right")}></div>
     </div>
     <h2 className={styles.title}>{iconNames[icons.indexOf(icon)]}</h2>
-    <a className={styles.button} href={`/details/${icons[icons.indexOf(icon)]}`}>Learn More</a>
+    <a className={styles.button} href={`/roles/${icons[icons.indexOf(icon)]}`}>Learn More</a>
     </div>
   );
 }

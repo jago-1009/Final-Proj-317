@@ -11,9 +11,9 @@ export default function Navbar() {
             <div className={styles.navLinks}>
                 <Link href="/">Home</Link>
                 <Link href="/medieval">The Medieval Times</Link>
-                <Link href="/details/archer">Archer</Link>
-                <Link href="/details/knight">Knight</Link>
-                <Link href="/details/monk">Priest</Link>
+                <Link href="/roles/archer">Archer</Link>
+                <Link href="/roles/knight">Knight</Link>
+                <Link href="/roles/monk">Priest</Link>
             </div>
 
             <div className={styles.signIn}>
