@@ -6,7 +6,7 @@ export default function Knight() {
     return (
         <div className={styles.container}>
             <Image src={KnightImg} alt="Knight" height={500} />
-            <h1></h1>
+            <h1>Knight</h1>
         </div>
     );
 }
