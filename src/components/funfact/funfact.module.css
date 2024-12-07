@@ -10,7 +10,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+   
     
+}
+.container > p {
+    font-size: 20px;
 }
 .text {
     display: flex;
@@ -18,8 +22,20 @@
     justify-content: space-evenly;
     flex-direction: column;
     width:50%;
+    
     text-align:center;
 }
 .container h3 {
-    font-size: 30px;
+    font-size: 28px;
+}
+.containerMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:100vh;
+    height:50%;
+    border-radius: 50%;
+    margin-top:50px;
+    margin-bottom:50px;
 }

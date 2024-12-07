@@ -24,7 +24,7 @@
   justify-content: space-evenly;
   flex-direction: column;
 }
-.container p {
+.container > p {
   font-size:24px;
 }
 .title {
@@ -50,7 +50,7 @@
   background-color: transparent;
   color:black;
 }
-.container h1 {
+.container > h1 {
   margin-top:50px;
   font-size: 75px;
 }
@@ -95,3 +95,20 @@
   
 }
 
+
+@media (max-width: 600px) {
+  .left, .right {
+    width:30%;
+  }
+.icons {
+  width: 100%;
+}
+.icons img {
+  width:30%;
+  aspect-ratio: 3/1;
+}
+.page {
+  width:100vw;
+}
+
+}

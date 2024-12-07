@@ -31,7 +31,28 @@ import { slide as Menu } from 'react-burger-menu';
 }
 else {
     return <div className={styles.container}>
-        <Menu className={styles.menu}><div className={styles.navLinksMobile}>
+        <Menu styles={{
+            bmBurgerButton: {
+                position: 'fixed',
+                width: '36px',
+                height: '30px',
+                left: '36px',
+                top: '36px'
+            },
+            bmBurgerBars: {
+                background: '#373a47'
+            },
+            bmBurgerBarsHover: {
+                background: '#a90000'
+            },
+            bmCrossButton: {
+                height: '24px',
+                width: '24px'
+            },
+            bmCross: {
+                background: '#bdc3c7'
+            },
+        }}><div className={styles.navLinksMobile}>
             <Link href="/">Home</Link>
             <Link href="/medieval">The Medieval Times</Link>
             <Link href="/roles/archer">Archer</Link>
