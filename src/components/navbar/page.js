@@ -2,13 +2,15 @@
 import styles from './navbar.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { SignedIn, SignInButton, SignedOut, UserButton } from '@clerk/nextjs';
 import { slide as Menu } from 'react-burger-menu';
  function DesktopNav({}) {
     const [isOpen, setOpen] = useState(false);
-    const width = window.innerWidth;
-  
+    let width;
+    useEffect(() => {
+         width = window.innerWidth;
+    })
     if (width > 600) {
         return <div className={styles.container}>
         <div className={styles.navLinks}>
