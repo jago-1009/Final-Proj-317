@@ -17,8 +17,11 @@
     content: " | ";
 }
 .navLinksMobile {
-    display:flex;
+    display:flex !important;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+}
+
+.bm-overlay {
+    background-color: black !important;
 }

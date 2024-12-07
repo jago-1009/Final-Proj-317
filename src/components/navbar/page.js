@@ -1,5 +1,5 @@
 'use client';
-import styles from './navbar.module.css';
+import Navstyles from './navbar.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
@@ -12,8 +12,8 @@ import { slide as Menu } from 'react-burger-menu';
          width = window.innerWidth;
     })
     if (width > 600) {
-        return <div className={styles.container}>
-        <div className={styles.navLinks}>
+        return <div className={Navstyles.container}>
+        <div className={Navstyles.navLinks}>
             <Link href="/">Home</Link>
             <Link href="/medieval">The Medieval Times</Link>
             <Link href="/roles/archer">Archer</Link>
@@ -21,7 +21,7 @@ import { slide as Menu } from 'react-burger-menu';
             <Link href="/roles/monk">Priest</Link>
         </div>
 
-        <div className={styles.signIn}>
+        <div className={Navstyles.signIn}>
             <SignedIn>
                 <UserButton />
             </SignedIn>
@@ -32,7 +32,7 @@ import { slide as Menu } from 'react-burger-menu';
     </div>
 }
 else {
-    return <div className={styles.container}>
+    return <div className={Navstyles.container}>
         <Menu styles={{
             bmBurgerButton: {
                 position: 'fixed',
@@ -42,7 +42,7 @@ else {
                 top: '36px'
             },
             bmBurgerBars: {
-                background: '#373a47'
+                background: 'black'
             },
             bmBurgerBarsHover: {
                 background: '#a90000'
@@ -54,7 +54,7 @@ else {
             bmCross: {
                 background: '#bdc3c7'
             },
-        }}><div className={styles.navLinksMobile}>
+        }}><div className={Navstyles.navLinksMobile}>
             <Link href="/">Home</Link>
             <Link href="/medieval">The Medieval Times</Link>
             <Link href="/roles/archer">Archer</Link>
