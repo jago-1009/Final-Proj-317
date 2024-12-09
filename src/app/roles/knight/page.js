@@ -10,7 +10,7 @@ export default function Knight() {
             <DetailsButton details={'armor'} top={'50%'} left={'47%'} href={'/details/armor'} />
             <h1>Knight</h1>
             <section className={styles.desc}>
-            <p>Knights were soldiers, usually working under a king or lord, who's main role was to protect the lord from any danger, as well as fight any people the lord deemed to be a threat. Knights had many different styles of weaponry and armor, and followed many different styles of combat. Click on the buttons on the image above to learn more about some items a knight might have used!</p>
+            <p>Knights were soldiers, usually working under a king or lord, who&apos;s main role was to protect the lord from any danger, as well as fight any people the lord deemed to be a threat. Knights had many different styles of weaponry and armor, and followed many different styles of combat. Click on the buttons on the image above to learn more about some items a knight might have used!</p>
             </section>
         </div>
     );
