@@ -6,7 +6,8 @@ import monk from '../assets/img/monk.png'
 import knight from '../assets/img/knight.png'
 import archer from '../assets/img/archer.png'
 import Funfact from "@/components/funfact/page";
-const funFactComp = dynamic(() => import("@/components/funfact/page"), {
+import dynamic from "next/dynamic";
+const FunFactComp = dynamic(() => import("@/components/funfact/page"), {
   ssr:false
 })
 export default function Home() {
@@ -75,7 +76,7 @@ export default function Home() {
     <h1>The Medieval Period</h1>
     <p>The Medieval Period, also known as the Middle Ages, is a period of history that covers the period from the 5th to the 15th centuries. It lasted approximately 1,000 years, starting with the fall of the Western Roman Empire.
     Throughout the period, there was cultural, social, economic, and religious changes very frequently. The period is most commonly divided into three sub-periods: the Early Middle Ages, the High Middle Ages, and the Late Middle Ages.</p>
-    <funFactComp top={"40%"} left={"70%"} fact={"Despite what people think, the Medieval Period was not considered the \'Dark Age\'!"} width={"40%"} />
+    <FunFactComp top={"40%"} left={"70%"} fact={"Despite what people think, the Medieval Period was not considered the \'Dark Age\'!"} width={"40%"} />
     <br />
     <p>Throughout the Medieval Period, there were many different roles that people could take. Click through the images below to find out more about people in those roles!</p>
     <div className={styles.page}>
