@@ -71,7 +71,7 @@ export default function Home() {
  }
  
   return (
-    <div className={styles.wrapper}>
+    <main className={styles.wrapper}>
       <div className={styles.container}>
     <h1>The Medieval Period</h1>
     <p>The Medieval Period, also known as the Middle Ages, is a period of history that covers the period from the 5th to the 15th centuries. It lasted approximately 1,000 years, starting with the fall of the Western Roman Empire.
@@ -92,6 +92,6 @@ export default function Home() {
     <h2 className={styles.title}>{iconNames[icons.indexOf(icon)]}</h2>
     <a className={styles.button} href={`/roles/${icons[icons.indexOf(icon)]}`}>Learn More</a>
     </div>
-    </div>
+    </main>
   );
 }

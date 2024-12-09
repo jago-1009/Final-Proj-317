@@ -4,3 +4,7 @@
     justify-content: space-evenly;
     flex-direction: column;
 }
+.desc {
+    width: 50%;
+    text-align: center;
+}
