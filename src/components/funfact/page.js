@@ -22,7 +22,7 @@ export default function Funfact({top, left, fact, width}) {
 
     function GetData() {
         
-        if (width > 600) {
+        if (windowWidth > 600) {
             return  <div className={factStyles.container} style={stylingBase}><div style={textSyling} className={factStyles.text}><h3>Fun Fact!</h3><p>{fact}</p></div>
             </div>
     }
