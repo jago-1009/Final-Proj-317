@@ -6,11 +6,9 @@ import { useEffect, useState } from 'react';
 import { SignedIn, SignInButton, SignedOut, UserButton } from '@clerk/nextjs';
 import { slide as Menu } from 'react-burger-menu';
  function DesktopNav({}) {
+    const [width, setWidth] = useState(window.innerWidth);
     const [isOpen, setOpen] = useState(false);
-    let width;
-    useEffect(() => {
-         width = window.innerWidth;
-    })
+    
     if (width > 600) {
         return <div className={Navstyles.container}>
         <div className={Navstyles.navLinks}>

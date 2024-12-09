@@ -1,10 +1,10 @@
 'use client';
 import factStyles from './funfact.module.css';
 import shield from '../../assets/img/AdobeStock_479006552.png'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Funfact({top, left, fact, width}) {
-    let windowWidth;
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const stylingBase = {
         backgroundImage: `url(${shield.src})`,
         width: width,
@@ -19,18 +19,12 @@ export default function Funfact({top, left, fact, width}) {
     const textSyling = {
         width: width,
     }
-    
-    useEffect     (() => {
-        windowWidth = window.innerWidth;
-    })
+
     function GetData() {
         
         if (width > 600) {
-            return  <div className={factStyles.container} style={stylingBase}>
-            <div style={textSyling} className={factStyles.text}>
-            <h3>Fun Fact!</h3>
-            <p>{fact}</p></div>
-        </div>
+            return  <div className={factStyles.container} style={stylingBase}><div style={textSyling} className={factStyles.text}><h3>Fun Fact!</h3><p>{fact}</p></div>
+            </div>
     }
     else {
         return <div className={factStyles.containerMobile} >
