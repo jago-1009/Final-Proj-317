@@ -64,7 +64,7 @@
 }
 .iconL, .iconR, .iconC {
   height:300px;
-  width:100px;
+  width: 150px;
   transition: all 0.2s;
 }
 .iconL, .iconR {

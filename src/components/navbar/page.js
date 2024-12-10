@@ -13,6 +13,7 @@ import { slide as Menu } from 'react-burger-menu';
         return <div className={Navstyles.container}>
         <div className={Navstyles.navLinks}>
             <Link href="/">Home</Link>
+            <Link href="/contact">Cantact</Link>
             <Link href="/medieval">The Medieval Times</Link>
             <Link href="/roles/archer">Archer</Link>
             <Link href="/roles/knight">Knight</Link>
