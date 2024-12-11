@@ -13,7 +13,7 @@
 **The Home Page**:
 
 - The home page shall present a grand image with clickable portions, accompanied by basic lore and knowledge of the site.
-- _Stewardship_: Ev and Jacob.
+- _Stewardship_: Sirs Ev and Jacob.
 
 **The Details Page**:
 
@@ -23,23 +23,23 @@
 
 **Medieval Times Page**:
 
-- A scroll dedicated .
-- _Stewardship_: Dependent upon the page.
+- A scroll dedicated to the eatery chain Medieval Times, as well as the differences between history and fiction.
+- _Stewardship_: Sir Ev.
 
 **The Archer's Page**:
 
 - A repository of knowledge concerning medieval archers, their longbows, quarrels, and bolts of various make.
-- _Stewardship_: Ev.
+- _Stewardship_: Sir Ev.
 
 **The Swordsman's Page**:
 
 - Tales of gallant fighters and their weaponry, including fine blades, stout garments, and sundry accoutrements of battle.
-- _Stewardship_: Jacob.
+- _Stewardship_: Sir Jacob.
 
 **The Priest's Page**:
 
 - Chronicles of holy priests, detailing their beliefs, holy garb, sacred relics, and ritual accessories.
-- _Stewardship_: Ev.
+- _Stewardship_: Sir Ev.
 
 ### Sources of Knowledge and Lore:
 
