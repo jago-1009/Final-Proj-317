@@ -1,10 +1,10 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import DetailsButton from "@/components/detailsbutton/page";
-export default function Knight() {
+export default function Medieval() {
   return (
     <div className={styles.container}>
-      <h1>Medieval Times</h1>
+      <h1 className={styles.header}>Medieval Times</h1>
       <section className={styles.desc}>
         <p>
           Lo! Gather ye round, for I shall tell thee of a wondrous place, known
@@ -34,105 +34,72 @@ export default function Knight() {
           spectacle and hearty feasting.
         </p>
       </section>
-      <section className={styles.table}>
-        <table>
+      <section>
+        <table className={styles.table}>
           <thead>
             <tr>
-              <th>Aspect</th>
-              <th>Medieval Times (Eatery)</th>
-              <th>Medieval Period (History)</th>
+              <th className={styles.tableHeading}>Aspect of Medieval Times</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Knights & Combat</td>
+            <tr className={styles.tableRow}>
               <td>
-                Choreographed jousts and duels, with knights performing scripted
-                acts of valor for entertainment.
-              </td>
-              <td>
-                Knights engaged in real warfare, tournaments, and served lords
-                or kings as part of a feudal system.
+                <a href="/medieval/knights-combat" className={styles.link}>
+                  Knights & Combat
+                </a>
               </td>
             </tr>
-            <tr>
-              <td>Food & Dining</td>
+            <tr className={styles.tableRow}>
               <td>
-                Hearty meals served without utensils, eaten with hands for
-                thematic immersion.
-              </td>
-              <td>
-                Medieval meals varied by class: peasants ate simple fare, while
-                nobles enjoyed elaborate banquets with utensils in later
-                periods.
+                <a href="/medieval/food-dining" className={styles.link}>
+                  Food & Dining
+                </a>
               </td>
             </tr>
-            <tr>
-              <td>Entertainment</td>
+            <tr className={styles.tableRow}>
               <td>
-                Jesters, music, and tournaments performed purely for modern
-                amusement.
-              </td>
-              <td>
-                Entertainment included minstrels, festivals, and tournaments
-                that were competitive events, not scripted shows.
+                <a href="/medieval/entertainment" className={styles.link}>
+                  Entertainment
+                </a>
               </td>
             </tr>
-            <tr>
-              <td>Armor & Weapons</td>
+            <tr className={styles.tableRow}>
               <td>
-                Armor and weapons are designed for safety and spectacle, often
-                exaggerated for effect.
-              </td>
-              <td>
-                Historical armor was functional, made for protection in combat,
-                and weapons were designed to be deadly.
+                <a href="/medieval/armor-weapons" className={styles.link}>
+                  Armor & Weapons
+                </a>
               </td>
             </tr>
-            <tr>
-              <td>Historical Accuracy</td>
+            <tr className={styles.tableRow}>
               <td>
-                Loosely based on medieval aesthetics, with creative liberties
-                for theatrical flair.
-              </td>
-              <td>
-                Rich and complex history spanning centuries with evolving
-                culture, technology, and power dynamics.
+                <a href="/medieval/historical-accuracy" className={styles.link}>
+                  Historical Accuracy
+                </a>
               </td>
             </tr>
-            <tr>
-              <td>Feudal System</td>
+            <tr className={styles.tableRow}>
               <td>
-                Simplified: the king and knights are the stars of the show.
-              </td>
-              <td>
-                A hierarchical system of lords, vassals, and serfs with complex
-                obligations and governance.
+                <a href="/medieval/feudal-system" className={styles.link}>
+                  Feudal System
+                </a>
               </td>
             </tr>
-            <tr>
-              <td>Hygiene</td>
-              <td>The venue is clean and sanitized for modern standards.</td>
+            <tr className={styles.tableRow}>
               <td>
-                The real medieval period had limited sanitation, with challenges
-                in hygiene and disease prevention.
+                <a href="/medieval/hygiene" className={styles.link}>
+                  Hygiene
+                </a>
               </td>
             </tr>
-            <tr>
-              <td>Purpose</td>
+            <tr className={styles.tableRow}>
               <td>
-                Designed for family fun and education through entertainment.
-              </td>
-              <td>
-                The actual medieval era was a time of survival, warfare,
-                religious devotion, and societal evolution.
+                <a href="/medieval/purpose" className={styles.link}>
+                  Purpose
+                </a>
               </td>
             </tr>
           </tbody>
         </table>
-      <ul>
-        <li><a href="/medieval/knights-combat">Knights and Combat</a></li>
-      </ul>
       </section>
     </div>
   );

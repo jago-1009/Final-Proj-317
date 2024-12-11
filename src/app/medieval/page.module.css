@@ -3,8 +3,97 @@
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
+  margin-top: 25px;
+}
+.header {
+  font-size: 60px;
 }
 .desc {
   width: 50%;
   text-align: center;
+  font-size: 25px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 20px;
+}
+
+.tableHeading {
+  font-size: 50px;
+}
+
+.tableRow td {
+  font-size: 20px;
+  padding: 10px 15px;
+  background-color: #f9f4e7;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+.tableRow td:hover {
+  scale: 1.2;
+}
+
+.link {
+  text-decoration: none;
+  color: #8b4513;
+  font-family: Cardo;
+  transition: all 0.2s ease-in-out;
+}
+
+.slugContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.pageHeader {
+  font-size: 80px;
+}
+
+.slugTable {
+  width: 80%;
+  border-collapse: collapse;
+  font-size: 25px;
+}
+
+.slugTableRow {
+  margin-bottom: 20px;
+}
+
+.slugTableHeader {
+  font-weight: bold;
+  text-align: left;
+  border-bottom: 2px solid #ccc;
+  font-family: Cardo;
+  text-align: center;
+}
+
+.slugTableCell {
+  padding: 15px;
+  text-align: center;
+}
+
+.backToTable {
+  padding: 20px;
+  background-color: #f9f4e7;
+  border: 2px solid black;
+  border-radius: 50px;
+  font-size: 20px;
+  font-family: Cardo;
+  margin-top: 20px;
+  font-weight: bold;
+  transition: all .2s ease-in-out;
+}
+
+.backToTable:hover {
+  scale: 1.2;
+  background-color: #0808069f;
+  color:#f9f4e7 ;
 }
