@@ -130,6 +130,9 @@ export default function Knight() {
             </tr>
           </tbody>
         </table>
+      <ul>
+        <li><a href="/medieval/knights-combat">Knights and Combat</a></li>
+      </ul>
       </section>
     </div>
   );

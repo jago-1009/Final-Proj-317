@@ -22,7 +22,7 @@ import { slide as Menu } from 'react-burger-menu';
 
         <div className={Navstyles.signIn}>
             <SignedIn>
-                <UserButton />
+                <UserButton className={Navstyles.loginButton}/>
             </SignedIn>
             <SignedOut>
                 <SignInButton />

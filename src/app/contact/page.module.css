@@ -1,10 +1,96 @@
+@font-face {
+    font-family: "Pica Regular";
+    src: url('../../assets/fonts/IMFellDWPica-Regular.ttf');
+  }
+  @font-face {
+    font-family: "Old English Boots";
+    src: url('../../assets/fonts/Old_Englished_Boots.ttf');
+  }
+  @font-face {
+    font-family: "Cardo";
+    src: url('../../assets/fonts/Cardo-Regular.ttf');
+  }
 .container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
 }
+
+.pageHeading {
+    font-size: 50px;
+    font-weight: lighter;
+    margin-top: 50px;
+}
+
 .desc {
     width: 50%;
     text-align: center;
+    font-size: 25px;
 }
+
+.formLabel {
+  font-size: 40px;
+}
+
+.formInput {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid;
+  font-family: Cardo;
+}
+
+
+
+/* Success Page */
+.messageContainer {
+    padding: 20; 
+    max-width: 200;
+}
+
+
+.messageReviewContainer {
+    max-height: 500px;
+    background-size: contain;
+
+}
+
+.messageReview {
+    text-align: center;
+    max-width: 1000px;
+
+}
+
+.messageParamTag {
+    font-size: 35px;
+    font-family: "Pica Regular";  
+    
+}
+
+.messageReviewText {
+    font-family: Cardo;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.contactReturn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #8B4513;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+    font-family: "Cardo";
+  }
+  
+  .contactReturn:hover {
+    background-color: #a0522d;
+  }
