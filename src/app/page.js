@@ -35,10 +35,11 @@ export default function Home() {
   const currentIndex = icons.indexOf(icon);
   let nextIndex
   if (direction === "left") {
-    nextIndex = (currentIndex - 1);
+    nextIndex = (currentIndex + 1);
   }
   if (direction === "right") {
-    nextIndex = (currentIndex + 1);
+    nextIndex = (currentIndex - 1);
+    
   }
   if (nextIndex > icons.length - 1) {
     nextIndex = 0
