@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import DetailsButton from "@/components/detailsbutton/page";
+import Link from "next/link";
 export default function Medieval() {
   return (
     <div className={styles.container}>
@@ -44,58 +45,58 @@ export default function Medieval() {
           <tbody>
             <tr className={styles.tableRow}>
               <td>
-                <a href="/medieval/knights-combat" className={styles.link}>
+                <Link href="/medieval/knights-combat" className={styles.link}>
                   Knights & Combat
-                </a>
+                </Link>
               </td>
             </tr>
             <tr className={styles.tableRow}>
               <td>
-                <a href="/medieval/food-dining" className={styles.link}>
+                <Link href="/medieval/food-dining" className={styles.link}>
                   Food & Dining
-                </a>
+                </Link>
               </td>
             </tr>
             <tr className={styles.tableRow}>
               <td>
-                <a href="/medieval/entertainment" className={styles.link}>
+                <Link href="/medieval/entertainment" className={styles.link}>
                   Entertainment
-                </a>
+                </Link>
               </td>
             </tr>
             <tr className={styles.tableRow}>
               <td>
-                <a href="/medieval/armor-weapons" className={styles.link}>
+                <Link href="/medieval/armor-weapons" className={styles.link}>
                   Armor & Weapons
-                </a>
+                </Link>
               </td>
             </tr>
             <tr className={styles.tableRow}>
               <td>
-                <a href="/medieval/historical-accuracy" className={styles.link}>
+                <Link href="/medieval/historical-accuracy" className={styles.link}>
                   Historical Accuracy
-                </a>
+                </Link>
               </td>
             </tr>
             <tr className={styles.tableRow}>
               <td>
-                <a href="/medieval/feudal-system" className={styles.link}>
+                <Link href="/medieval/feudal-system" className={styles.link}>
                   Feudal System
-                </a>
+                </Link>
               </td>
             </tr>
             <tr className={styles.tableRow}>
               <td>
-                <a href="/medieval/hygiene" className={styles.link}>
+                <Link href="/medieval/hygiene" className={styles.link}>
                   Hygiene
-                </a>
+                </Link>
               </td>
             </tr>
             <tr className={styles.tableRow}>
               <td>
-                <a href="/medieval/purpose" className={styles.link}>
+                <Link href="/medieval/purpose" className={styles.link}>
                   Purpose
-                </a>
+                </Link>
               </td>
             </tr>
           </tbody>

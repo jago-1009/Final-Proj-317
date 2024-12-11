@@ -1,6 +1,7 @@
 "use client";
 import { useParams } from "next/navigation";
 import styles from "../page.module.css";
+import Link from "next/link";
 const rowData = {
   "knights-combat": {
     aspect: "Knights & Combat",
@@ -85,9 +86,9 @@ export default function SlugPage() {
           </tr>
         </tbody>
       </table>
-      <a className={styles.backToTable} href="/medieval">
+      <Link className={styles.backToTable} href="/medieval">
         Back to Table
-      </a>
+      </Link>
     </div>
   );
 }
