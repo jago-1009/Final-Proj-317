@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import DetailsButton from "@/components/detailsbutton/page";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { SignedIn, SignedOut } from "@clerk/nextjs";
 
 export default function Contact() {
   const [email, setEmail] = useState("");
@@ -29,7 +30,7 @@ export default function Contact() {
         </p>
         <br />
         <br />
-        <p>Or just send us a message!</p>
+        <p className={styles.callToAction}>Or just send us a message!</p>
         <form
           onSubmit={messageSubmit}
           style={{ display: "flex", flexDirection: "column", gap: "10px" }}
@@ -57,12 +58,17 @@ export default function Contact() {
               className={styles.formInput}
             />
           </label>
-          <button
+          <SignedIn>
+            <button
             type="submit"
-            style={{ padding: "10px", fontSize: "16px", cursor: "pointer" }}
+            className={styles.submitButton}
           >
             Send
           </button>
+          </SignedIn>
+          <SignedOut>
+            <p>Please Sign In to Send a Message!</p>
+          </SignedOut>
         </form>
       </section>
     </div>
